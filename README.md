@@ -4,8 +4,8 @@ This project was completed as a part of assessment for Data Science with Python 
 
 ## Table of content
 
-1. About The Project [Link Text](#about-the-project)
-2. [Objective](#objective)
+1. [About The Project](#About-The-Project)
+2. [Objective](#Objective)
 3. [Data Dictionary](#Data-Dictionary)
 4. [Analysis](#Analysis)
   - Task 1
@@ -157,7 +157,7 @@ plt.legend(loc="lower right")
 
 ![image](https://github.com/user-attachments/assets/a2f44eb9-458c-4f58-8648-b0146428da9f)
 
-##What I Learned
+## What I Learned
 - Understand the importance of Business Analytics.
 - Understand the importance of Data Visualization and how to implement it.
 - Understand more about Python.
