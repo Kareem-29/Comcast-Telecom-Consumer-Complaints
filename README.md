@@ -87,6 +87,7 @@ scount= service['Ticket #'].count()
 ```
 I used the same code to get the rest of the types.
 And here is the result:
+
 ![image](https://github.com/user-attachments/assets/e505b765-a989-4f5c-a290-a1ea11be2ff2)
 
 #Task 3 -  Create a new categorical variable with value as Open and Closed. Open & Pending is to be categorized as Open and Closed & Solved is to be categorized as Closed. 
