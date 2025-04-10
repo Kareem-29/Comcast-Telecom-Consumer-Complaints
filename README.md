@@ -25,7 +25,7 @@ complaints. The existing database will serve as a repository of public customer 
 It will help to pin down what is wrong with Comcast's customer service. 
 
 ## Objective
-A project is to make a simple Exploratory Data Analysis to find an insight Comcast is an American global telecommunication company.
+The project is to make a simple Exploratory Data Analysis to find insight Comcast is an American global telecommunication company.
 
 ## Data Dictionary
 The existing [database](https://pages.github.com/](https://www.kaggle.com/code/umairaslam/comcast-telecom-consumer-complaints) will serve as a repository of public customer complaints filed against Comcast.
@@ -43,8 +43,8 @@ The existing [database](https://pages.github.com/](https://www.kaggle.com/code/u
 
 ## Analysis
 # Task 1 - Provide the trend chart for the number of complaints at monthly and daily granularity levels
- The first step to convert and get the month and day and by doing that it will make it easier for us to visuailse the results.
- And for that I used this code:-
+ The first step is to convert and get the month and day and by doing that it will make it easier for us to visualize the results.
+ And for that, I used this code:-
 ```
 comcast['Date_month_year'] = pd.to_datetime(comcast['Date_month_year']) 
 comcast['Month']= comcast['Date_month_year'].apply(lambda x: x.month) 
@@ -68,29 +68,29 @@ aix.annotate('Max complaints in Month (6)', color='red',
 ```
 ![image](https://github.com/user-attachments/assets/4778a9ba-00b4-4e89-84a1-13b2e233027f)
 
-The daily graph will have the same idea as monthly graph
+The daily graph will have the same idea as the monthly graph
 
 ![image](https://github.com/user-attachments/assets/867be016-619e-4ef2-bc6c-72364a5831db)
 
 #Task 2 - Provide a table with the frequency of complaint types. 
-For this taks I need to find out which complaint types are maximum i.e., around internet, network issues, or across any other 
+For this task, I need to find out which complaint types are maximum i.e., around internet, network issues, or across any other 
 domains. 
 
 To be able to do the task first I need to get every type and its count.
-This is what i used:-
+This is what I used:-
 ```
 service= comcast[comcast['Customer Complaint'].str.contains('service', case = False)]   
 scount= service['Ticket #'].count()
 
 ```
 I used the same code to get the rest of the types.
-And here is the result:
+Here is the result:
 
 ![image](https://github.com/user-attachments/assets/e505b765-a989-4f5c-a290-a1ea11be2ff2)
 
-#Task 3 -  Create a new categorical variable with value as Open and Closed. Open & Pending is to be categorized as Open and Closed & Solved is to be categorized as Closed. 
+#Task 3 -  Create a new categorical variable with values as Open and Closed. Open & Pending is to be categorized as Open and Closed & Solved is to be categorized as Closed. 
 This is a simple one all we need is to create a new column and then use some if-conditions
-Here what i used:-
+Hereis  what i used:-
 ```
 comcast["Complaint_Status"] = ["Open" if Status=="Open" or Status=="Pending" else "Closed" for Status in comcast["Status"]]
 
@@ -102,7 +102,7 @@ Provide insights on:
   - Which state has the maximum complaints.
   - Which state has the highest percentage of unresolved complaints.
 
-First we will get the date by using this code:
+First, we will get the date by using this code:
 ```
 Status = comcast.groupby(["State","Complaint_Status"]).size().unstack().fillna(0)
 
@@ -132,11 +132,11 @@ un_complaints.sort_values('Unresolved_cmp_prct',axis = 0,ascending=False)[:3]
 ![image](https://github.com/user-attachments/assets/78be8c70-ef8d-459a-a647-4081f128b617)
 
 
-We find out that **Georgia** has the most complaints and the highest perscentage of unresolved complaints too.
+We find out that **Georgia** has the most complaints and the highest percentage of unresolved complaints too.
 
 #Task 5 -  Provide the percentage of complaints resolved till date, which were received through the Internet and customer care calls.
 
-To get the percentage of Received Via with Complaints Status i used this code:-
+To get the percentage of Received Via with Complaints Status I used this code:-
 ```
 compl_pre = comcast.groupby(['Received Via','Complaint_Status']).size().unstack().fillna(0)
 compl_pre['resolved'] = compl_pre['Closed']/compl_pre['Closed'].sum()*100
@@ -144,7 +144,7 @@ compl_pre['resolved ']
 
 ```
 
-Then to visuailse it by using Pie chart:
+Then visualize it by using Pie chart:
 
 ```
 lbl= 'Customer Care Call', 'Internet ' 
