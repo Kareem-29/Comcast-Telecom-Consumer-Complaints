@@ -9,13 +9,11 @@ This project was completed as a part of assessment for Data Science with Python 
 3. [Data Dictionary](#Data-Dictionary)
 4. [Analysis](#Analysis)
     - Task 1
-    - Number of complaints per Day
-    - Calendar Chart
-    - Complaint Types.
-    - Number of issue Per Case
-    - Topic Model
-    - Total Number of Tickets per states
-    - Open and Closed Tickets per States
+    - Task 2
+    - Task 3
+    - Task 4
+    - Task 5
+      
 5. [What I Learned](#What-I-Learned)
 
 
