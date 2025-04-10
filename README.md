@@ -5,9 +5,9 @@ This project was completed as a part of assessment for Data Science with Python 
 ## Table of content
 
 1. About The Project [Link Text](#about-the-project)
-2. Objective [Link Text](#objective)
-3. Data Dictionary [Link Text](#data-dictionary)
-4. Analysis [Link Text](#anlysis)
+2. [Objective](#objective)
+3. [Data Dictionary](#Data-Dictionary)
+4. [Analysis](#Analysis)
   - Task 1
   - Number of complaints per Day
   - Calendar Chart
@@ -16,7 +16,7 @@ This project was completed as a part of assessment for Data Science with Python 
   - Topic Model
   - Total Number of Tickets per states
   - Open and Closed Tickets per States
-5. What I Learned[Link Text](#what-i-learned)
+5. [What I Learned](#What-I-Learned)
 
 
 ## About The Project
@@ -30,7 +30,7 @@ It will help to pin down what is wrong with Comcast's customer service.
 A project is to make a simple Exploratory Data Analysis to find an insight Comcast is an American global telecommunication company.
 
 ## Data Dictionary
-The existing [database]([https://pages.github.com/](https://www.kaggle.com/code/umairaslam/comcast-telecom-consumer-complaints) will serve as a repository of public customer complaints filed against Comcast.
+The existing [database](https://pages.github.com/](https://www.kaggle.com/code/umairaslam/comcast-telecom-consumer-complaints) will serve as a repository of public customer complaints filed against Comcast.
 
 * Ticket #: Ticket number assigned to each complaint
 * Customer Complaint: Description of complaint
